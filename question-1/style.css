@@ -1,0 +1,32 @@
+.col-1 {
+	min-width: 200px;
+	max-width: 200px;
+	flex-grow: 1;
+}
+
+.col-2 {
+	min-width: 100px;
+	flex-grow: 5;
+}
+
+.col-3 {
+	min-width: 300px;
+	max-width: 300px;
+	flex-grow: 1;
+}
+
+.col-1, .col-2, .col-3 {
+	border: 1px solid black;
+	height: calc(100vh - 18px);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;	
+}
+
+@media only screen and (max-width: 600px) {
+	.wrapper {
+		overflow-x: scroll;
+	}
+}
